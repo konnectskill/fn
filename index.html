@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahulplays - Gaming Hub</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #001f3f;
+            /* Dark Blue color */
+            color: #fff;
+            /* White text color */
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .header {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+
+        .logo {
+            width: 80px;
+        }
+
+        .container {
+            padding: 100px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        /* About Me Container Styles */
+        .about-me-container {
+            max-width: 400px;
+            /* Set a maximum width */
+            margin: 20px auto 50px;
+            /* Center the container and adjust margin */
+            background-color: rgba(255, 255, 255, 0.1);
+            /* Transparent white */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            /* Shadow */
+        }
+
+        .about-me-container h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            font-family: 'Poppins', sans-serif;
+            /* Apply Poppins font */
+        }
+
+        .about-me-container p {
+            font-family: 'Poppins', sans-serif;
+            /* Apply Poppins font */
+        }
+
+        .about-me-container img {
+            width: 100px;
+            border-radius: 50%;
+            margin-top: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            /* Initial shadow */
+            transition: box-shadow 0.5s ease;
+            /* Transition effect */
+        }
+
+        .about-me-container img:hover {
+            box-shadow: 0 0 40px rgba(255, 223, 0, 0.8);
+            /* Golden glow effect on hover */
+        }
+
+        /* Navigation Styles */
+        nav {
+            position: fixed;
+            top: 0;
+            right: 0;
+            margin: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #3498db;
+            /* Blue color on hover */
+        }
+
+        /* Media Query for Mobile View */
+        @media only screen and (max-width: 600px) {
+            nav {
+                top: 50px;
+                right: 20px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                position: fixed;
+                top: 0;
+                right: 0;
+                background-color: #001f3f;
+                padding: 10px;
+                display: none;
+            }
+
+            nav ul.show {
+                display: flex;
+            }
+
+            nav ul li {
+                margin-bottom: 10px;
+            }
+
+            nav ul li a {
+                color: #fff;
+            }
+
+            nav ul li a:hover {
+                color: #3498db;
+                /* Blue color on hover */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <a href="YOUR_YOUTUBE_LINK" target="_blank">
+            <img src="lokey.png" alt="Rahulplays Logo" class="logo">
+        </a>
+    </div>
+
+    <div class="container">
+        <h1>
+            <a href="https://www.youtube.com/channel/UC6kRWMYzybQh2thQynLfjlg" target="_blank" style="color: #dddddd; text-decoration: none;">
+                Welcome to <span style="color: #711cc1;">Rahulplays</span> Gaming Hub
+            </a>
+        </h1>
+        <p>Your ultimate destination for gaming adventures and epic moments!</p>
+        <!-- Add Fortnite logo here -->
+        <img src="jpgfortnite.png" alt="Fortnite Logo" style="width: 500px; margin-top: 20px;">
+    </div>
+
+    <div class="about-me-container">
+        <h2>About Me</h2>
+        <p>
+            Hey there, Fortnite enthusiasts! I'm Rahul, the force behind Rahulplays. When it comes to Fortnite, I don't just play; I embark on thrilling adventures within the ever-evolving world of Epic Games. Picture this: heart-pounding battles, strategic maneuvers, and epic victories. Whether it's conquering the battlefield solo or collaborating with a squad, I bring a unique blend of skill, strategy, and a touch of style to every game.</p>
+        <img src="aslesh.png" alt="Profile Picture">
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Tips and Tricks</a></li>
+            <li><a href="#">Gameplay</a></li>
+            <li><a href="https://store.epicgames.com/en-US/download" target="_blank">Download</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        // JavaScript for mobile view dropdown menu
+        const navToggle = document.querySelector('nav ul');
+        navToggle.addEventListener('click', () => {
+            navToggle.classList.toggle('show');
+        });
+    </script>
+</body>
+
+</html>
